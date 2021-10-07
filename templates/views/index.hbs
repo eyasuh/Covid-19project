@@ -6,21 +6,29 @@
     <title>Search Test Sites</title>
     <link rel="icon" href="/img/thatRona.png">
     <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .testsite {
+            background-color: #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 
 <body>
     <div class="main-content">
         {{>header}}
 
-        <p>Use this site to get your weather</p>
+        <p>Search for testing sites here:</p>
 
         <form>
             <input placeholder="Municipality">
             <button>Search</button>
         </form>
 
-        <p id="message-1"></p>
-        <p id="message-2"></p>
+        <p id="field-1"></p>
+        <p id="searchResults"></p>
+        
     </div>
     
     {{>footer}}

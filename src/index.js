@@ -8,7 +8,7 @@ const userRouter = require('./routers/user')
 const testsites = require('./utils/testsites')
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -26,15 +26,29 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Home',
-        name: 'Pistol Pete'
+        name: 'Eyasu, Kyle, & Mike'
 
+    })
+})
+
+app.get('/register', (req, res) => {
+    res.render('register', {
+        title: 'Register',
+        name: 'Eyasu, Kyle, & Mike',
+    })
+})
+
+app.get('/login', (req, res) => {
+    res.render('login', {
+        title: 'Login',
+        name: 'Eyasu, Kyle, & Mike',
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Pistol Pete'
+        name: 'Eyasu, Kyle, & Mike'
     })
 })
 
@@ -42,7 +56,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         message: 'This is a help message',
-        name: 'Pistol Pete'
+        name: 'Eyasu, Kyle, & Mike'
     })
 })
 
@@ -53,56 +67,26 @@ app.get('/search', (req, res) => {
         })
     }
 
-    testsites(req.query.municipality, (error, { name, fulladdr, municipality } = {}) => {
+    testsites(req.query.municipality, (error, { testsites } = {}) => {
+        
         if (error) {
             return res.send({ error })
         }
 
         res.send({
-            name: req.name,
+            testsites,
             // testsites: testSiteData,
             // location,
             municipality: req.query.municipality
         })
     })
 
-    // geocode(req.query.address, (error, { latitude, longitude, location } = {}) => {
-    //     if (error) {
-    //         return res.send({ error })
-    //     }
-
-    //     forecast(latitude, longitude, (error, forecastData) => {
-    //         if (error) {
-    //             return res.send({ error })
-    //         }
-
-    //         res.send({
-    //             forecast: forecastData,
-    //             location,
-    //             address: req.query.address
-    //         })
-    //     })
-    // })
-
-})
-
-app.get('/products', (req, res) => {
-    if (!req.query.search) {
-        return res.send({
-            error: 'You must provide a search term'
-        })
-    }
-
-    console.log(req.query.search)
-    res.send({
-        products: []
-    })
 })
 
 app.get('/help/*', (req, res) => {
     res.render('404page', {
         title: '404',
-        name: 'Pistol Pete',
+        name: 'Eyasu, Kyle, & Mike',
         errorMessage: 'Help ariticle not found.'
     })
 })
@@ -110,13 +94,14 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404page', {
         title: '404',
-        name: 'Pistol Pete',
+        name: 'Eyasu, Kyle, & Mike',
         errorMessage: 'Page not found'
     })
 })
 
 app.use(express.json())
 app.use(userRouter)
+app.use('/register', userRouter)
 
 app.listen(port, () => {
     console.log('Server is up on ' + port)
