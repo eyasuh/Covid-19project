@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="icon" href="/img/thatRona.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <form>
+        <div class="main-content">
+            {{>header}}
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="name">Password</label>
+            <input type="password" id="password" Name="password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+    <a href="/login">Register</a>
+    {{>footer}}
+</body>
+
+
+</html>
