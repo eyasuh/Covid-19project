@@ -41,8 +41,8 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        message: 'This is a help message',
-        name: 'Pistol Pete'
+        message: 'Frequently Asked Questions',
+        name: 'Pistol Chala'
     })
 })
 
@@ -102,7 +102,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404page', {
         title: '404',
-        name: 'Pistol Pete',
+        name: 'Pistol chala',
         errorMessage: 'Help ariticle not found.'
     })
 })

@@ -9,13 +9,234 @@
 </head>
 
 <body>
-    <div class="main-content">
-        {{>header}}
-        <p>{{message}}</p>
+
+    {{>header}}
+    <h1>{{message}}</h1>
+    
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Should I get a COVID-19 vaccine?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Yes. Three COVID-19 vaccines have been authorized for emergency use among
+                    specific age groups by the U.S. Food and Drug Administration (FDA), and now the Pfizer vaccine has
+                    received full FDA approval. Johns Hopkins Medicine views all authorized and approved COVID-19
+                    vaccines as highly effective at preventing serious disease, hospitalization and death from COVID-19.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What is the delta variant?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Since the beginning of the COVID-19 pandemic, SARS-CoV-2, the coronavirus
+                    that
+                    causes COVID-19, has mutated (changed), resulting in different variants. One of these is called the
+                    delta
+                    variant. Delta is regarded as one of the most contagious forms of the coronavirus so far, and
+                    currently
+                    accounts for the majority of COVID-19 cases in the U.S.
+
+                    Traveling internationally if you are not fully vaccinated against COVID-19 is not recommended,
+                    because it
+                    puts you at risk for infection with the delta variant. This includes unvaccinated children.
+
+                    Being fully vaccinated against COVID-19 can protect you from the delta variant. All three
+                    FDA-authorized or
+                    FDA-approved COVID-19 vaccines can protect you from the most severe effects of the delta variant.
+                    While
+                    COVID-19 vaccines are not perfect, and fully vaccinated people can still catch and transmit the
+                    virus, they
+                    are highly effective against serious coronavirus disease and greatly decrease the likelihood of
+                    hospitalization and death from COVID-19.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Should I wear a face mask?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">The CDC continues to monitor the spread of COVID-19 and recommends wearing
+                    face masks — for those who are fully vaccinated as well as those who are not — especially when you
+                    are in areas of high viral transmission.
+
+                    The CDC recommends wearing masks and maintaining physical distancing in doctors’ offices, hospitals
+                    or long-term-care facilities. Johns Hopkins Medicine’s current safety guidelines require everyone to
+                    wear masks inside our facilities, including hospitals, care centers and offices.
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Can I make my own hand sanitizer?
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">There are no studies supporting the effectiveness of homemade hand sanitizer
+                    in killing the coronavirus on people’s hands. Experts agree that the best method for cleaning hands
+                    is washing for at least 20 seconds with soap and water.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Can you catch the coronavirus from surfaces?
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Although the coronavirus weakens and dies over time outside the human body,
+                    studies suggest it can live on surfaces for a few hours or up to several days, depending on the
+                    surface, temperature and other environmental factors. For instance, a small amount of the
+                    coronavirus is detectable on plastic surfaces for up to three days, on stainless steel for up to two
+                    days and up to one day on cardboard, but it’s at less than 0.1% of the starting virus material.
+
+                    So far, evidence suggests that the virus does not survive as well on a soft surface (such as fabric)
+                    as it does on frequently touched hard surfaces like elevator buttons and door handles.
+
+                    More research will provide information on the coronavirus and how long it lives on surfaces. In the
+                    meantime, wash your hands thoroughly after being in public places.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Is it safe to go shopping?
+                </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">It’s safer to wear a mask when you are in the store, avoid unnecessary trips
+                    and maintain physical distancing as you shop. Be sure to clean your hands often while shopping and
+                    as soon as you get home.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Can I go to the gym?
+                </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">If the coronavirus is spreading in your community, working out at home is
+                    safer than going to an indoor fitness center. If you go to the gym, wear a mask and avoid high
+                    intensity group classes that take place indoors. Items touched by many people (such as handles and
+                    barbells) could pose a risk. In order to practice physical distancing during an increase in COVID-19
+                    cases, it is best to avoid crowded public places when possible.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    Is it safe to travel?
+                </button>
+            </h2>
+            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Outbreaks of coronavirus variants, including the very contagious delta
+                    variant, are occurring in the United States and in countries around the world. Traveling to places
+                    with high infection rates, especially with unvaccinated children or adults, raises the risk of
+                    catching and transmitting the virus. The Centers for Disease Control and Prevention (CDC) has
+                    updated travel information on a range of destinations.
+
+                    Travelers should be cautious about cruise ship travel and situations that involve crowded places.
+                    You are less likely to catch the coronavirus that causes COVID-19 on airplanes because of air
+                    circulation and filtering, but you may be asked about your infection risk when you book a flight.
+                    And be aware that you may be prevented from returning from certain sites should they be on lockdown
+                    due to a surge in cases.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                    Can humans get the coronavirus from dogs or cats?
+                </button>
+            </h2>
+            <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Jason Villano, D.V.M., a veterinary expert at Johns Hopkins, says, “Despite
+                    the very few reports worldwide, including here in the United States, of sick and healthy domestic
+                    animals, including pets, testing positive for SARS-CoV-2, the virus that causes COVID-19, there is
+                    little evidence at this time that such animals are easily infected with the virus under normal
+                    conditions, or could transmit it.”
+
+                    If COVID-19 cases are increasing in your area, experts recommend keeping pets indoors or avoiding
+                    socialization of pets with other animals, and maintaining good hygiene when handling or caring for
+                    your animals.
+
+                    Wash your hands before and after interacting with animals.
+                    Don’t kiss your pets or let them lick you or share your food.
+                    Walk dogs on a leash. Do not allow pets to interact with people or other animals outside the
+                    household.
+                    People who are ill with COVID-19 should let someone else take care of their animals. If this isn’t
+                    possible, patients should wear a mask while looking after their pet, and wash their hands before and
+                    after.
+
+                    Reliable sources for updates include the CDC, the United States Department of Agriculture and the
+                    American Veterinary Medical Association.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                    What are COVID-19 symptoms?
+                </button>
+            </h2>
+            <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">COVID-19 symptoms include:
+                    <ul>
+                        <li>Fever or chills</li>
+                        <li>Muscle or body aches </li>
+                        <li>Sore throat </li>
+                        <li>New loss of taste or smell</li>
+                        <li> Diarrhea</li>
+                        <li> Headache</li>
+                        <li> New fatigue</li>
+                        <li> Nausea or vomiting</li>
+                        <li>Congestion or runny nose</li>                    
+                    </ul>
+                    
+
+                    Symptoms and risk factors may vary in different people. If you have concerns, especially if you
+                    think you might have been exposed to the coronavirus that causes COVID-19, call your doctor. Learn
+                    more about COVID-19 symptoms.
+                </div>
+            </div>
+        </div>
     </div>
 
     {{>footer}}
 </body>
-
-
-
