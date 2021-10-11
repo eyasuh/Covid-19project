@@ -8,7 +8,7 @@ const userRouter = require('./routers/user')
 const testsites = require('./utils/testsites')
 
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
